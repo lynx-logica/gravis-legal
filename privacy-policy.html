@@ -23,18 +23,19 @@
 <body>
 
 <h1>Política de Privacidad</h1>
-<p class="updated">Última actualización: 27 de julio de 2026</p>
+<p class="updated">Última actualización: 2 de agosto de 2026</p>
 
 <p>
   GRAVIS HIT Trainer ("la aplicación") respeta tu privacidad. Esta política describe qué datos
-  se recogen, cómo se usan y qué derechos tienes como usuario.
+  se recogen, cómo se usan y qué derechos tienes como usuario, tanto en la versión de Android
+  como en la de iOS.
 </p>
 
 <h2>1. Datos almacenados localmente</h2>
 <p>
-  La aplicación guarda toda la información en el propio dispositivo mediante AsyncStorage
-  (almacenamiento local de Android). No existe ningún servidor propio al que se envíen datos.
-  Los datos almacenados incluyen:
+  La aplicación guarda toda la información en el propio dispositivo (mediante almacenamiento
+  local nativo de cada plataforma: AsyncStorage en Android, el almacenamiento equivalente de
+  iOS). No existe ningún servidor propio al que se envíen datos. Los datos almacenados incluyen:
 </p>
 <ul>
   <li>Configuración de entrenamiento (repeticiones objetivo, tempo, equipamiento).</li>
@@ -51,7 +52,8 @@
   Los usuarios gratuitos ven anuncios servidos por <strong>Google AdMob</strong>. Google puede
   recoger identificadores de dispositivo y datos de uso con el fin de mostrar publicidad
   relevante, sujeto al consentimiento que el usuario otorgue al iniciar la aplicación
-  (formulario UMP/GDPR).
+  (formulario UMP/GDPR). En iOS, además, se solicita permiso de seguimiento (App Tracking
+  Transparency) cuando corresponda, conforme a las normas de Apple.
 </p>
 <p>
   Consulta la política de privacidad de Google:
@@ -65,9 +67,11 @@
 <h2>3. Compras integradas (RevenueCat)</h2>
 <p>
   Las suscripciones Pro se gestionan mediante <strong>RevenueCat</strong>, que actúa como
-  intermediario entre la aplicación y Google Play Billing. RevenueCat recibe un identificador
-  anónimo de usuario (generado por la propia librería) y el estado de la suscripción, pero no
-  tu nombre, correo ni ningún dato de pago (esos datos los gestiona Google Play directamente).
+  intermediario entre la aplicación y la plataforma de pago de cada tienda (Google Play Billing
+  en Android, App Store / StoreKit en iOS). RevenueCat recibe un identificador anónimo de
+  usuario (generado por la propia librería) y el estado de la suscripción, pero no tu nombre,
+  correo ni ningún dato de pago (esos datos los gestiona directamente Google Play o Apple, según
+  la plataforma).
 </p>
 <p>
   Consulta la política de privacidad de RevenueCat:
@@ -90,8 +94,14 @@
 
 <h2>5. Permisos del dispositivo</h2>
 <p>
-  La aplicación puede solicitar acceso al audio del dispositivo para la síntesis de voz durante
-  los entrenamientos (expo-speech). No se graba audio del usuario ni se envía a ningún servidor.
+  La aplicación reproduce guías de voz y tonos pregrabados durante los entrenamientos usando el
+  altavoz del dispositivo. No solicita permiso de micrófono, no graba audio del usuario y no
+  envía audio a ningún servidor.
+</p>
+<p>
+  En iOS, la aplicación solicita acceso al acelerómetro (sensor de movimiento) únicamente para
+  detectar el ritmo de tus repeticiones durante el entrenamiento. Este dato se procesa
+  íntegramente en el dispositivo y no se almacena ni se envía a ningún servidor.
 </p>
 
 <h2>6. Menores de edad</h2>
