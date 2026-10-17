@@ -23,7 +23,7 @@
 <body>
 
 <h1>Política de Privacidad</h1>
-<p class="updated">Última actualización: 4 de octubre de 2026</p>
+<p class="updated">Última actualización: 15 de octubre de 2026</p>
 
 <p>
   GRAVIS HIT Trainer ("la aplicación") respeta tu privacidad. Esta política describe qué datos
@@ -35,7 +35,8 @@
 <p>
   La aplicación guarda toda la información en el propio dispositivo (mediante almacenamiento
   local nativo de cada plataforma: AsyncStorage en Android, el almacenamiento equivalente de
-  iOS). No existe ningún servidor propio al que se envíen datos. Los datos almacenados incluyen:
+  iOS). No existe ningún servidor propio al que se envíen tus datos de entrenamiento ni de cuenta.
+  Los datos almacenados incluyen:
 </p>
 <ul>
   <li>Configuración de entrenamiento (repeticiones objetivo, tempo, equipamiento).</li>
@@ -58,15 +59,36 @@
   <strong>Ajustes &rsaquo; tu nombre &rsaquo; iCloud</strong>— o a tu cuenta de Google o de
   Apple. Es la única vía por la que estos datos salen del teléfono sin que tú hagas nada.
 </p>
+<p>
+  <strong>Animaciones de los ejercicios.</strong> En iPhone, las animaciones de los ejercicios
+  van incluidas en la aplicación y verlas no conecta con ningún servidor. La versión de Android
+  publicada hoy en Google Play todavía las descarga de un almacenamiento de ficheros alojado en
+  Supabase y servido a través de Cloudflare: ese servicio recibe tu dirección IP y datos
+  técnicos del dispositivo, como cualquier descarga web, y Cloudflare puede fijar una cookie
+  técnica de seguridad contra el tráfico automatizado (<code>__cf_bm</code>, caduca a los 30
+  minutos). No enviamos datos de entrenamiento ni identificadores a ese almacenamiento, y la
+  aplicación no lee ni usa esa cookie para publicidad ni seguimiento. Está previsto que la
+  próxima versión de Android también las incluya y esta sección se actualizará entonces.
+</p>
 
 <h2>2. Publicidad (Google AdMob)</h2>
 <p>
   Los usuarios gratuitos ven anuncios servidos por <strong>Google AdMob</strong>. Google puede
   recoger identificadores de dispositivo y datos de uso con el fin de mostrar publicidad
   relevante, sujeto al consentimiento que el usuario otorgue al iniciar la aplicación
-  (formulario UMP/GDPR). En iOS no se solicita permiso de seguimiento (App Tracking
-  Transparency): la aplicación no accede al identificador de publicidad (IDFA) del dispositivo,
-  por lo que los anuncios en iOS son siempre no personalizados.
+  (formulario UMP/GDPR de Google, que se muestra en el Espacio Económico Europeo y el Reino
+  Unido).
+</p>
+<p>
+  <strong>En iOS</strong>, antes de mostrar ningún anuncio, la aplicación te pide permiso con
+  el aviso del sistema de App Tracking Transparency (ATT). En el Espacio Económico Europeo y el
+  Reino Unido, ese aviso llega después del formulario de consentimiento de Google, y solo si
+  ese formulario permite mostrar anuncios. Solo si aceptas, Google AdMob puede usar el
+  identificador de publicidad de tu dispositivo (IDFA) para personalizar los anuncios y medir
+  su rendimiento, y puede combinarlo con datos de otras empresas, aplicaciones y sitios web.
+  Si lo rechazas, la aplicación funciona exactamente igual, los anuncios siguen apareciendo y
+  no se accede a ese identificador. Puedes cambiar tu decisión cuando quieras en Ajustes
+  &rsaquo; Privacidad y seguridad &rsaquo; Seguimiento de iOS.
 </p>
 <p>
   En concreto, el SDK de anuncios de Google puede recoger y compartir con Google: tu ubicación
@@ -82,8 +104,7 @@
   <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
 </p>
 <p>
-  Los usuarios con suscripción <strong>GRAVIS Pro</strong> no ven ningún anuncio y Google
-  AdMob no recopila datos en su sesión.
+  Los usuarios con suscripción <strong>GRAVIS Pro</strong> no ven ningún anuncio.
 </p>
 
 <h2>3. Compras integradas (RevenueCat)</h2>
