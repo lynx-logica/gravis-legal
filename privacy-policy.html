@@ -23,7 +23,7 @@
 <body>
 
 <h1>Política de Privacidad</h1>
-<p class="updated">Última actualización: 15 de octubre de 2026</p>
+<p class="updated">Última actualización: 16 de noviembre de 2026</p>
 
 <p>
   GRAVIS HIT Trainer ("la aplicación") respeta tu privacidad. Esta política describe qué datos
@@ -44,8 +44,11 @@
   <li>Estado de la suscripción Pro (caché para funcionamiento sin conexión).</li>
 </ul>
 <p>
-  Puedes eliminar todos los datos locales desde <strong>Ajustes &rsaquo; Tus datos &rsaquo;
-  Borrar todos mis datos</strong> dentro de la aplicación, o desinstalando la aplicación.
+  Puedes eliminar tu historial, tus marcas y tu configuración desde <strong>Ajustes &rsaquo; Tus datos &rsaquo;
+  Borrar todos mis datos</strong> dentro de la aplicación. Ese botón no borra tus preferencias
+  de privacidad ni los identificadores que guardan en el dispositivo las librerías de
+  compras y de actualizaciones; desinstalar la aplicación elimina los datos locales de
+  la aplicación.
 </p>
 <p>
   <strong>Copia de seguridad automática del dispositivo.</strong> Si tienes activada la copia
@@ -107,14 +110,30 @@
   Los usuarios con suscripción <strong>GRAVIS Pro</strong> no ven ningún anuncio.
 </p>
 
-<h2>3. Compras integradas (RevenueCat)</h2>
+<h2>3. Compras y estado de la suscripción (RevenueCat)</h2>
 <p>
-  Las suscripciones Pro se gestionan mediante <strong>RevenueCat</strong>, que actúa como
-  intermediario entre la aplicación y la plataforma de pago de cada tienda (Google Play Billing
-  en Android, App Store / StoreKit en iOS). RevenueCat recibe un identificador anónimo de
-  usuario (generado por la propia librería) y el estado de la suscripción, pero no tu nombre,
-  correo ni ningún dato de pago (esos datos los gestiona directamente Google Play o Apple, según
-  la plataforma).
+  Para saber si tienes Gravis Pro usamos RevenueCat (RevenueCat, Inc., Estados Unidos), que trata los datos por nuestra cuenta como encargado del tratamiento. Cada vez que abres la aplicación o vuelves a ella, también si nunca has comprado nada, la aplicación pregunta a RevenueCat si la cuenta de la tienda de ese dispositivo tiene una suscripción activa. RevenueCat recibe:
+</p>
+<ul>
+  <li>un identificador aleatorio que su librería crea en tu dispositivo. No contiene tu nombre ni tu cuenta de la tienda, pero distingue tu instalación: es un dato seudónimo, no anónimo.</li>
+  <li>si has comprado o restaurado una compra, el historial de compras de Gravis Pro que entrega la tienda: qué plan, cuándo se compró, renovó o canceló, y su precio y moneda.</li>
+  <li>datos técnicos de la conexión y del dispositivo: dirección IP, modelo del dispositivo, sistema y versión, versión de la aplicación, idiomas preferidos y país de la tienda.</li>
+  <li>En iPhone, además, el identificador de proveedor del dispositivo (IDFV): un código que Apple asigna a tu dispositivo para las aplicaciones de un mismo desarrollador. No es el identificador de publicidad y no permite reconocerte en aplicaciones de otras empresas.</li>
+</ul>
+<p>
+  RevenueCat no recibe tu nombre, tu correo, tu historial de entrenamiento ni los datos de tu tarjeta: el cobro lo hace la tienda.
+</p>
+<p>
+  Para qué y por qué podemos hacerlo: si eres suscriptor, para comprobar y mantener tu suscripción (ejecución del contrato). Si no lo eres, para reconocer una compra anterior cuando reinstalas o cambias de teléfono, evitar que pagues dos veces y decidir si se muestran anuncios (interés legítimo; puedes oponerte escribiéndonos: borraremos el registro de tu instalación en RevenueCat. La aplicación no tiene hoy un ajuste para dejar de hacer esta consulta; mientras siga instalada volverá a preguntar, así que la forma de detenerla del todo es desinstalarla).
+</p>
+<p>
+  Estos datos se tratan en Estados Unidos, con las cláusulas contractuales tipo aprobadas por la Comisión Europea. Se conservan mientras exista o pueda restaurarse una suscripción, durante el tiempo adicional que exija la ley o sea necesario para atender reclamaciones, o hasta que pidas su supresión.
+</p>
+<p>
+  «Borrar todos mis datos» elimina lo guardado en tu dispositivo, pero no lo que conserva RevenueCat, y no cancela tu suscripción. Para que borremos tus datos en RevenueCat escríbenos desde Ajustes › Ayuda › Enviar informe, que incluye el identificador de tu instalación; sin él no podemos saber qué registro es el tuyo. Lo haremos en un mes como máximo. Para cancelar la suscripción usa los ajustes de suscripciones de tu tienda.
+</p>
+<p>
+  Si nos escribes para desistir o pedir un reembolso, tratamos los datos que nos envíes: tu nombre, tu correo, tu domicilio si lo indicas, la tienda, el plan, la fecha y el número de pedido, el identificador de RevenueCat de tu instalación (el formulario de la aplicación lo añade al correo y puedes verlo antes de enviarlo) y, si te devolvemos el importe directamente, los datos necesarios para hacer el pago, como tu cuenta bancaria. Con ese correo sabemos a qué persona corresponde el identificador. Los usamos para tramitar tu solicitud y cumplir nuestras obligaciones legales. Los conservamos el tiempo que exijan las obligaciones fiscales y contables y la atención de reclamaciones, y solo los comunicamos a quien deba ejecutar el pago.
 </p>
 <p>
   Consulta la política de privacidad de RevenueCat:
@@ -123,8 +142,8 @@
 
 <h2>4. Analítica de producto (PostHog)</h2>
 <p>
-  Usamos <strong>PostHog</strong> para entender de forma anónima cómo se usa la aplicación
-  (por ejemplo, qué pantallas se visitan o si se completa el proceso de configuración inicial),
+  Usamos <strong>PostHog</strong> para entender cómo se usa la aplicación, sin tu nombre ni tu
+  correo (por ejemplo, qué pantallas se visitan o si se completa el proceso de configuración inicial),
   con el fin de mejorar el producto. Al cerrar cada serie de trabajo se envía además cómo
   terminó: si alcanzaste el fallo muscular, si la serie se cerró al llegar al techo de
   repeticiones de la calibración, qué técnica avanzada se aplicó, si estabas en semana de
@@ -132,10 +151,12 @@
 </p>
 <p>
   No se envía tu nombre, tu correo, ningún dato de contacto ni los pesos que levantas: todo va
-  asociado a un identificador anónimo generado por la propia librería. Esta analítica está
-  apagada hasta que la enciendes tú desde
+  asociado a un identificador aleatorio generado por la propia librería, que no dice quién eres
+  pero distingue tu instalación. Esta analítica está apagada hasta que la enciendes tú desde
   <strong>Ajustes &rsaquo; Privacidad &rsaquo; Compartir datos de uso anónimos</strong>, y puedes
-  volver a apagarla cuando quieras.
+  volver a apagarla cuando quieras. Si la tienes encendida, también se registra cuándo abres la
+  pantalla de Gravis Pro, qué plan pulsas y si la compra o la restauración se completó; no el
+  precio ni ningún dato de pago.
 </p>
 <p>
   Consulta la política de privacidad de PostHog:
@@ -177,7 +198,10 @@
   indicará cuándo se realizó la revisión más reciente.
 </p>
 
-<h2>9. Contacto</h2>
+<h2>9. Responsable y contacto</h2>
+<p>
+  Responsable: Luis Muñoz de la Cruz (Lynx Lógica), NIF 46851762A, Plaza España 10, 28231 Las Rozas, España, <a href="mailto:lynx-logica@proton.me">lynx-logica@proton.me</a>. Puedes pedirnos acceso, rectificación, supresión, limitación, oposición y portabilidad de tus datos escribiendo a ese correo; responderemos en un mes. Si crees que no hemos atendido tu derecho, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es).
+</p>
 <p>
   Para cualquier consulta relacionada con la privacidad, puedes escribirnos a:<br />
   <a href="mailto:lynx-logica@proton.me">lynx-logica@proton.me</a>
@@ -188,8 +212,9 @@
   En cada arranque, la aplicación contacta con el servicio de actualizaciones de Expo
   (u.expo.dev) para comprobar si hay una nueva versión de su código y sus recursos (assets).
   Esa petición incluye datos técnicos (versión de la aplicación, plataforma, versión de
-  runtime) y un identificador de cliente de actualizaciones anónimo almacenado en el
-  dispositivo. No incluye datos de entrenamiento ni datos personales. Más información en la
+  runtime) y un identificador de cliente de actualizaciones que no dice quién eres,
+  almacenado en el dispositivo. No incluye datos de entrenamiento, ni tu nombre ni tu
+  correo. Más información en la
   política de privacidad de Expo:
   <a href="https://expo.dev/privacy">https://expo.dev/privacy</a>.
 </p>
